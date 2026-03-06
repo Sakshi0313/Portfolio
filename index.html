@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sakshi Pawar | Full Stack Developer & AI/ML Engineer</title>
+    <meta name="description" content="Sakshi Pawar — Full Stack Developer and AI/Machine Learning Engineer. Building scalable web platforms and intelligent AI-powered systems." />
+    <meta name="author" content="Sakshi Pawar" />
+    <meta property="og:title" content="Sakshi Pawar | Full Stack Developer & AI/ML Engineer" />
+    <meta property="og:description" content="Building scalable web platforms and intelligent AI-powered systems." />
+    <meta property="og:type" content="website" />
+    <link rel="canonical" href="https://sakshipawar.dev" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Sakshi Pawar",
+      "jobTitle": "Full Stack Developer & AI/ML Engineer"
+    }
+    </script>
+  </head>
+  <body>
+    <script>
+      // Ensure light mode is default
+      if (!localStorage.getItem('theme')) {
+        localStorage.setItem('theme', 'light');
+        document.documentElement.classList.remove('dark');
+      } else if (localStorage.getItem('theme') === 'light') {
+        document.documentElement.classList.remove('dark');
+      } else {
+        document.documentElement.classList.add('dark');
+      }
+    </script>
+    <div id="root"></div>
+    <!-- Use relative path for entry to ensure Rollup can resolve during build -->
+    <script type="module" src="./src/main.tsx"></script>
+  </body>
+</html>
